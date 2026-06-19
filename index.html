@@ -3,161 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VoltSheild Electrical Services</title>
+    <title>VoltShield Electrical Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    
     <header>
        <h1>VoltSheild Electrical Services</h1>
-       <nav>
-            <!-- 1. Brand on the left -->
-            <a href="index.html">VoltShield Electrical</a>
+       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <!-- 1. Brand on the left -->
+                <a class="navbar-brand fw-bold text-warning" href="index.html">VoltShield Electrical</a>
 
-            <!-- 2. Page/section navigation links -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services-section">Services</a></li>
-                <li><a href="index.html#inquiry-section">Price Inquiry</a></li>
-            </ul>
-
-            <!-- 3. Action button on the right -->
-            <a href="booking.html">Book Online Now</a>
+                <!-- 2. Page/section navigation links -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="index.html#services-section">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#inquiry-section">Price Inquiry</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- 3. Action button on the right -->
+                <a class="btn btn-warning btn-sm ms-md-3 px-3 fw-bold" href="booking.html">Book Online Now</a>
+            </div>
        </nav> 
     </header>
     <!-- 3. Hero Section -->
-    <section>
-        <h1>Certified Electrical Engineering & Troubleshooting Specialists</h1>
-        <p>Safe, compliant, and reliable electrical solutions for modern homes. Over <strong>15 years of trusted on-site experience</strong> keeping households powered safely.</p>
-        <a href="booking.html">Book a Technician Now</a>
+    <section class="bg-dark text-light min-vh-100 d-flex align-items-center pt-5">
+        <div class="container">
+            <div class="col-md-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-3 text-white">
+                    Certified Electrical Engineering & <span class="text-warning">Troubleshooting Specialists</span>
+                </h1>
+                <p class="lead text-secondary mb-4">
+                    Safe, compliant, and reliable electrical solutions for modern homes. Over <strong class="text-light">15 years of trusted on-site experience</strong> keeping households powered safely.
+                </p>
+                <a href="booking.html">Book a Technician Now</a>
+            </div>
+            
+        </div>
+        
     </section>
 
     <!-- 4. Trust & Experience Section -->
-     <section>
-        <h2>Why Choose VoltShield Electrical</h2>
-        <div>
-            <article>
+     <section class="py-5 bg-light">
+        <h2 class="text-center mb-5">Why Choose VoltShield Electrical</h2>
+        <div class="row">
+            <article class="col-md-4" text-center>
                 <h3>15+ Years Experience</h3>
-                <p>Fully qualified and deeply experienced in residential fault-finding, upgrading domestic distribution boards, and complex rewiring.</p>
+                <p class="text-muted">Fully qualified and deeply experienced in residential fault-finding, upgrading domestic distribution boards, and complex rewiring.</p>
             </article>
-            <article>
+            <article class="col-md-4">
                 <h3>Safety First Compliance</h3>
-                <p>Every installation, repair, and diagnostic test strictly adheres to local energy commission safety standards. Your family's safety is our priority.</p>
+                <p class="text-muted">Every installation, repair, and diagnostic test strictly adheres to local energy commission safety standards. Your family's safety is our priority.</p>
             </article>
-            <article>
+            <article class="col-md-4">
                 <h3>100% Satisfaction Guaranteed</h3>
-                <p>We stand firmly behind our workmanship. If the issue isn't resolved to standard or if a component fails prematurely, we make it right—no questions asked.</p>
+                <p class="text-muted">We stand firmly behind our workmanship. If the issue isn't resolved to standard or if a component fails prematurely, we make it right—no questions asked.</p>
             </article>
         </div>
      </section>
 
     <!-- 5. The Core Electrical Services Grid Section -->
-     <section id="service-section">
-        <h2>Our Specialized Electrical Services</h2>
-        <div class="row" id="service-container">
+     <section id="service-section" class="py-5 bg-light">
+        <h2 class="text-center mb-5">Our Specialized Electrical Services</h2>
+        <div class="row" id="service-container" class="row g-4": row>
 
         </div>
 
      </section> 
      
      <!-- 6. Price Inquiry and Transparency Block Section -->
-    <section id="inquiry-section">
+    <section id="inquiry-section" class="py-5 bg-white">
         
-        <div class="container">  <!-- Centers the whole section block on the screen -->
-            <div class="row align-items-center"> <!-- Sets up side-by-side flexbox alignment -->
-                <div>   <!-- Column 1-->
+        
+        <div class="container"> <!-- Create a Two-Column Layout Row -->
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">   <!-- Column 1-->
                     <h3>Transparent Pricing. No Hidden Surprises.</h3>
                     <p>We believe in upfront honesty. While basic installation rates are fixed, complex troubleshooting requires a precise on-site assessment to ensure you don't overpay.</p>
                 </div>
-                    <div> <!-- Column 2 -->
-                        <h3>Need a Custom Quote or Have a Unique Issue?</h3>
-                        <p>Tell us about your electrical issue below, and our master technician will evaluate your requirements and provide a free preliminary price estimate within 2 hours.</p>
-                        <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name">
-                            <label for="telephone">Tel:</label>
-                            <input type="number" id="telephone" name="telephone">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-            </div>
+                <div class="col-md-7"> <!-- Column 2 -->
+                    <h3>Need a Custom Quote or Have a Unique Issue?</h3>
+                    <p>Tell us about your electrical issue below, and our master technician will evaluate your requirements and provide a free preliminary price estimate within 2 hours.</p>
+                    <p>2-Hour Response Time Guaranteed</p>
+                    <form class="card p-4 shadow-sm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <label>Describe your electrical issue:</label>
+                        <input type="textarea">
+                        <button type="submit" class="btn btn-warning w-100 fw-bold">Request Price Estimate</button>
+                    </form>
+                </div>
+                </div>
         </div>
+        
     </section>
 
     <!-- 7. How It Works Section-->
-     <section id="process-section">
+     <section id="how-it-works" class="py-5 bg-light">
         <div class="container">
-            <h2>How to Book Your Appointment</h2>
-            <ol>
-                <li>
-                    <div>Step 1</div>
-                    <h3>Select your service</h3>
-                    <p>Browse our service menu and click "Book Now" to launch our automated scheduling system.</p>
+            <h2 class="text-center mb-5">How to Book Your Appointment</h2>
+
+            <ol class="row list-unstyled g-4">
+                <li class="col-md-4 text-center">
+                    <div class="step-number mb-3">1</div> 
+                    <h3 class="h5">Select your service</h3>
+                    <p class="text-muted small">Browse our service menu and click "Book Now" to launch our automated scheduling system.</p>        
                 </li>
-                <li>
-                    <div>Step 2</div>
-                    <h3>Secure Your Time Slot</h3>
-                    <p>Choose a date and time slot that fits your schedule. Our system features live availability to completely eliminate double-booking.</p>
+                <li class="col-md-4 text-center">
+                    <div class="step-number mb-3">2</div>
+                    <h3 class="h5">Secure Your Time Slot</h3>
+                    <p class="text-muted small">Choose a date and time slot that fits your schedule. Our system features live availability to completely eliminate double-booking.</p>
                 </li>
-                <li>
-                    <div>Step 3</div>
-                    <h3>Technician Dispatched</h3>
-                    <p>You will receive an immediate confirmation. A certified electrician will arrive on your selected date, fully equipped to resolve your issue.</p>
+                <li class="col-md-4 text-center">
+                    <div class="step-number mb-3">3</div>
+                    <h3 class="h5">Technician Dispatched</h3>
+                    <p class="text-muted small">You will receive an immediate confirmation. A certified electrician will arrive on your selected date, fully equipped to resolve your issue.</p>
                 </li>
             </ol>
+
         </div>
      </section>
 
      <!-- 8. Footer Section-->
-      <footer>
+      <footer class="bg-dark text-light pt-5 pb-3 mt-5">
         <div class="container">
-            <div class="row">
-                <div>   <!--Column 1:Company Profile-->
-                    <h5>VoltShield Electrical</h5>
-                    <p>Mission Statement: Providing certified, compliant, and safe residential electrical engineering solutions. Over 15 years of on-site fault-finding and installation experience.</p>
-                    <p>License No: EW-2026-99432 (Energy Commission Compliant)</p>
+            <div class="row">   <!--Main Information Grid-->
+                <div class="col-md-4 mb-4">   <!--Column 1:Company Profile-->
+                    <h5 class="text-warning mb-3">VoltShield Electrical</h5>
+                    <p class="text-secondary small">Mission Statement: Providing certified, compliant, and safe residential electrical engineering solutions. Over 15 years of on-site fault-finding and installation experience.</p>
+                    <p class="text-secondary small mb-0"><strong class="text-light">License No: EW-2026-99432 (Energy Commission Compliant)</strong></p>
                 </div>
 
-                <div>   <!--Column 2: Service Menu (Quick Links)-->
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li>
+                <div class="col-md-2 col-6 mb-4">   <!--Column 2: Service Menu (Quick Links)-->
+                    <h5 class="text-warning mb-3">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
                             <a href="index.html" class="text-secondary text-decoration-none">Home</a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a href="index.html#services-section" class="text-secondary text-decoration-none">Services</a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a href="index.html#inquiry-section" class="text-secondary text-decoration-none">Price Inquiry</a>
                         </li>
                     </ul>
                 </div>
 
-                <div>   <!-- Column 3: Operating Hours-->
-                    <h5>Business Operating Hours</h5>
-                    <ul>
-                        <li><strong>Monday-Friday:</strong>8:00AM - 6:00PM</li>
-                        <li><strong>Saturday:</strong>9:00AM - 4:00PM</li>
-                        <li><strong>Sunday:</strong>Emergency Breakdown Trips Only</li>
+                <div class="col-md-3 col-6 mb-4">   <!-- Column 3: Operating Hours-->
+                    <h5 class="text-warning mb-3">Business Operating Hours</h5>
+                    <ul class="list-unstyled text-secondary small mb-0">
+                        <li class="mb-2"><strong class="text-light">Monday-Friday:</strong> 8:00AM - 6:00PM</li>
+                        <li class="mb-2"><strong class="text-light">Saturday:</strong> 9:00AM - 4:00PM</li>
+                        <li class="mb-2"><strong class="text-light">Sunday:</strong> Emergency Breakdown Trips Only</li>
                     </ul>
                 </div>
 
-                <div>   <!--Column 4: Emergency Support-->
-                    <h5>Emergency Support</h5>
-                    <p>Got a power failure or a burning smell? Call our hotlines immediately. Available 24/7 for urgent breakdowns.</p>
-                    <a href="tel:+60123456789">📞 Call Support Now</a>
-                    <p><strong>Email Support Desk:</strong>support@voltshield.com</p>
+                <div class="col-md-3 mb-4">   <!--Column 4: Emergency Support-->
+                    <h5 class="text-warning mb-3">Emergency Support</h5>
+                    <p class="text-secondary small mb-3">Got a power failure or a burning smell? Call our hotlines immediately. Available 24/7 for urgent breakdowns.</p>
+                    <a href="tel:+60123456789" class="btn btn-warning btn-sm w-100 fw-bold mb-3">📞 Call Support Now</a>
+                    <p class="text-secondary small mb-0"><strong class="text-light">Email Support Desk:</strong> support@voltshield.com</p>
                 </div>
 
-                <hr>    <!-- Visual Separator -->
+                <hr class="border-secondary my-4">    <!-- Visual Separator -->
 
-                <div >  <!-- Footer Note-->
-                    <div>
+                <div class="row" >  <!-- Footer Note-->
+                    <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
                         © 2026 VoltShield Electrical. All Rights Reserved.
                     </div>
-                    <div>
-                        Tagline: Designed for Safety & Reliability.
+                    <div class="col-md-6 text-center text-md-end">
+                         Designed for Safety & Reliability.
                     </div>
 
                 </div>
@@ -166,6 +191,6 @@
 
       </footer>
 
-    
+      <script src="app.js"></script>
 </body>
 </html>

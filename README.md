@@ -15,9 +15,9 @@ A data-driven web application designed for independent contractors to manage the
 
 ### Phase 1: Frontend & Browser Logic (Current Focus)
 - [ ] **Task 1: Environment & UI Shell**
-  - [ ] Set up project directory with `index.html` and `app.js`.
-  - [ ] Link Bootstrap 5 via CDN.
-  - [ ] Verify JavaScript connection via browser console.
+  - [X] Set up project directory with 'index.html', 'app.js' and 'booking.html'.
+  - [X] Link Bootstrap 5 via CDN.
+  - [X] Verify JavaScript connection via browser console.
 - [ ] **Task 2: Dynamic Service Catalog**
   - [ ] Define a structured Array of Objects in `app.js` to store service data (ID, name, price, description).
   - [ ] Use DOM manipulation to loop through the array and dynamically render Bootstrap cards.
